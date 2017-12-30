@@ -1,8 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import ClassComponent from './classComponent'
+import Field from './field'
 // React DOM somente quando precisar renderizar tudo
 
 
-ReactDOM.render(<ClassComponent label='Contador' initialValue={10} />
+ReactDOM.render(<Field initialValue='teste' />
 , document.getElementById('app'))
