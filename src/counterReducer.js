@@ -8,7 +8,8 @@ export default function (state = INITIAL_STATE, action) {
         case 'DEC':
             return { ...state, number: state.number - state.step }
         case 'STEP_CHANGED':
-            return { ...state, step: action.payload }
+        // Com o mais ele vai converter para numero
+            return { ...state, step: +action.payload }
         default:
             return state
     }
